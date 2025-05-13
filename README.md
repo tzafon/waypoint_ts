@@ -11,7 +11,7 @@ npm i @tzafon/waypoint
 ## Example
 
 ```typescript
-import { Waypoint } from "./index";
+import { Waypoint } from "@tzafon/waypoint";
 
 async function main() {
   console.log("start");

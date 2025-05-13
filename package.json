@@ -1,6 +1,6 @@
 {
   "name": "@tzafon/waypoint",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tzafon Waypoint – browser-automation client for Node/TS",
   "author": "Tzafon",
   "license": "MIT",
