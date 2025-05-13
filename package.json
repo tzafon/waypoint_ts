@@ -1,0 +1,40 @@
+{
+  "name": "@tzafon/waypoint",
+  "version": "0.1.1",
+  "description": "Tzafon Waypoint – browser-automation client for Node/TS",
+  "author": "Tzafon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzafon/waypoint-ts.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist-cjs/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "dist-cjs"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json && tsc --project tsconfig.json --module commonjs --outDir dist-cjs",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.14",
+    "@types/ws": "^8.5.8",
+    "globals": "^16.1.0",
+    "typescript": "^5.4.5"
+  }
+}
